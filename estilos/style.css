@@ -1,12 +1,7 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poiret+One&display=swap');
 
-@font-face {
-    font-family: 'Android';
-    src: url('../fontes/idroid.otf') format('opentype');
-    font-weight: normal;
-}
 
 :root {
     --cor0: #0D0D0D;
@@ -16,6 +11,7 @@
     --cor4: #4D4D59;
 
     --fonte-padrao: "Poiret One", sans-serif;
+    --fonte-segundaria: "Karla", sans-serif;
 }
 
 * {
@@ -122,17 +118,26 @@ video#fundo-video {
     text-align: center;
     font-family: var(--fonte-padrao);
     line-height: 1.5em;
-    margin-top: 50vh;
+    margin-top: 35vh;
 }
 
 .conteudo h1 {
-    font-size: 23px;
-    margin-bottom: 30px;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.conteudo h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
 .conteudo p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-family: var(--fonte-segundaria);
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.5em;
+    font-size: 20px;
     width: 300px;
     margin: auto;
 }
@@ -174,8 +179,12 @@ div#sobre section h2 {
 }
 
 div#info p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-segundaria);
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
     line-height: 2em;
+    margin-bottom: 40px;
 }
 
 .sobre-container {
@@ -191,36 +200,64 @@ div#img-blob img {
     margin-top: 20px;
 }
 
-#portfolio {
-    background-color: black;
+div#estilos section {
     display: flex;
     flex-direction: column;
-    padding: 60px 0px 0px 0px;
-    align-items: center;
-}
-
-#portfolio h2 {
-    font-size: 40px;
-    color: white;
-    font-family: var(--fonte-padrao);
-    margin-bottom: 40px;
-}
-
-.galeria {
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    background-color: black;
 }
 
-.galeria img {
-    width: 300px;
+#estilos section h2 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+}
+
+
+
+.estilos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px; /* ou o tamanho que quiser */
+    gap: 20px;
+}
+
+.estilos-container img {
+    width: 250px;
     height: auto;
     border-radius: 10px;
     border: rgba(255, 255, 255, 0.26) 2px solid;
 }
 
+#estilos section h3 {
+    color: white;
+    font-size: 25px;
+    margin: 5px 0px 0px 0px;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+}
 
+#estilos section p {
+    color: white;
+    font-size: 1em;
+    margin: 5px 0px 10px 0px;
+    text-align: center;
+    font-family: var(--fonte-segundaria);
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.estilo {
+    background-color: var(--cor0);
+}
 
 
 
