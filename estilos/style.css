@@ -247,7 +247,7 @@ div#estilos section {
 #estilos section p {
     color: white;
     font-size: 1em;
-    margin: 5px 0px 10px 0px;
+    margin: 2px 0px 10px 0px;
     text-align: center;
     font-family: var(--fonte-segundaria);
     font-optical-sizing: auto;
@@ -255,9 +255,61 @@ div#estilos section {
     font-style: normal;
 }
 
-.estilo {
-    background-color: var(--cor0);
+.carrossel-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    margin: 0 auto;
 }
+
+.carrossel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 16px;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+}
+
+.carrossel img {
+    flex: 0 0 auto;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+}
+
+.carrossel img:hover {
+    transform: scale(1.05);
+    }
+
+.seta {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background: var(--cor1);
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.seta.esquerda {
+    left: -10px;
+    top: 130px;
+}
+
+.seta.direita {
+    right: -10px;
+    top: 130px;
+}
+
 
 
 
