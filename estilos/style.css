@@ -61,7 +61,7 @@ a {
 
 .nav-list a {
     font-size: 18px;
-    color: white;
+    color: var(--cor3);
     padding-block: 16px;
 }
 
@@ -73,7 +73,7 @@ a {
     display: none;
     border: none;
     background: none;
-    border-top: 3px solid #fff;
+    border-top: 3px solid var(--cor3);
     cursor: pointer;
 }
 
@@ -83,7 +83,7 @@ a {
     display: block;
     width: 30px;
     height: 3px;
-    background: #fff;
+    background: var(--cor3);
     margin-top: 5px;
     position: relative;
     transition: 0.3s
@@ -114,7 +114,7 @@ video#fundo-video {
 .conteudo {
     position: relative;
     z-index: 1;
-    color: white;
+    color: var(--cor3);
     text-align: center;
     font-family: var(--fonte-padrao);
     line-height: 1.5em;
@@ -147,7 +147,7 @@ video#fundo-video {
     margin: 25px 0px 25px 0px;
     padding: 14px 24px;
     background-color: var(--cor1);
-    color: white;
+    color: var(--cor3);
     box-shadow: 0px 0px 50px #d2d6d986;
     font-family: var(--fonte-padrao);
     font-weight: bold;
@@ -168,7 +168,7 @@ div#sobre section {
     margin-top: 15vh;
     padding: 50px;
     background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
-    color: white;
+    color: var(--cor3);
 }
 
 div#sobre section h2 {
@@ -206,12 +206,12 @@ div#estilos section {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    color: white;
+    color: var(--cor3);
     background-color: black;
 }
 
 #estilos section h2 {
-    color: white;
+    color: var(--cor3);
     font-size: 35px;
     margin-bottom: 10px;
     text-align: center;
@@ -237,7 +237,7 @@ div#estilos section {
 }
 
 #estilos section h3 {
-    color: white;
+    color: var(--cor3);
     font-size: 25px;
     margin: 5px 0px 0px 0px;
     text-align: center;
@@ -245,7 +245,7 @@ div#estilos section {
 }
 
 #estilos section p {
-    color: white;
+    color: var(--cor3);
     font-size: 1em;
     margin: 2px 0px 10px 0px;
     text-align: center;
@@ -291,7 +291,7 @@ div#estilos section {
     top: 40%;
     transform: translateY(-50%);
     background: var(--cor1);
-    color: white;
+    color: var(--cor3);
     border: none;
     font-size: 20px;
     padding: 8px 12px;
@@ -311,7 +311,7 @@ div#estilos section {
 }
 
 div#duvidas {
-    color: white;
+    color: var(--cor3);
     background-color: black;
     padding: 80px 0px 0px 0px;
 }
@@ -392,6 +392,66 @@ div#duvidas section h3 {
     font-weight: 200;
     font-style: normal;
     padding: 25px 0px 25px 0px;
+}
+
+#avaliacoes {
+    color: var(--cor3);
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: black;
+}
+
+#avaliacoes h2 {
+    font-size: 20px;
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding: 15px 0px;
+}
+
+#avaliacoes .descricao {
+    font-family: var(--fonte-segundaria);
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    padding: 0px 0px 40px 0px;
+}
+
+.avaliacao {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.avaliacao .estrela {
+    font-family: "Material Symbols Outlined";
+    color: var(--cor1);
+    margin: 10px 15px;
+    padding: 0px;
+    display: block;
+}
+
+.avaliacao p {
+    padding: 0px 20px 20px 20px;
+    font-family: var(--fonte-segundaria);
+}
+
+.avaliacao span {
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0px 0px 0px 20px;
+}
+
+.avaliacao .cargo {
+    font-family: var(--fonte-segundaria);
+    font-weight: 200;
+}
+
+.avaliacao .cargo {
+    font-style: italic;
 }
 
 
