@@ -310,11 +310,89 @@ div#estilos section {
     top: 130px;
 }
 
+div#duvidas {
+    color: white;
+    background-color: black;
+    padding: 80px 0px 0px 0px;
+}
 
+div#duvidas section h2 {
+    font-size: 35px;
+    font-family: var(--fonte-padrao);
+    text-align: center;
+}
 
+div#duvidas section h3 {
+    font-size: 20px;
+    font-family: var(--fonte-segundaria);
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+}
 
+#como-funciona {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
+.etapa {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+}
 
+.material-symbols-outlined {
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.texto h4 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+}
+
+.texto p {
+    font-size: 16px;
+    line-height: 1.4em;
+    font-weight: 200;
+    font-family: var(--fonte-segundaria);
+}
+
+#duvidas-frequentes {
+    padding: 40px 40px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.duvida {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.duvida-texto h4 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    
+}
+
+.duvida-texto p {
+    font-family: var(--fonte-segundaria);
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    padding: 25px 0px 25px 0px;
+}
 
 
 
