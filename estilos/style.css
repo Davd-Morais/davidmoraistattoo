@@ -454,6 +454,96 @@ div#duvidas section h3 {
     font-style: italic;
 }
 
+#linktree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: black;
+}
+
+.linktree-card {
+    background-color: var(--cor0);
+    padding: 30px 20px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+    border: 1px solid var(--cor1);
+}
+
+.linktree-card img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#studio-video {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid var(--cor2);
+    margin-bottom: 20px;
+}
+
+.linktree-card h2 {
+  font-family: var(--fonte-padrao);
+  color: white;
+  margin-bottom: 2px;
+  font-size: 25px;
+}
+
+.linktree-card p {
+  font-family: var(--fonte-segundaria);
+  color: var(--cor3);
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.link-btn {
+  position: relative;
+  display: block;
+  background-color: var(--cor1);
+  color: white;
+  padding: 14px 20px;
+  border-radius: 50px;
+  margin-bottom: 12px;
+  font-family: var(--fonte-segundaria);
+  font-size: 16px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.link-btn .material-symbols-outlined {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+}
+
+.linktree-card .link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: var(--cor1);
+    color: white;
+    padding: 14px;
+    border-radius: 50px;
+    margin-bottom: 12px;
+    font-family: var(--fonte-segundaria);
+    font-weight: 200;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.linktree-card .link-btn:hover {
+    background-color: var(--cor2);
+    transform: scale(1.05);
+}
 
 
 @media (max-width: 750px) {
