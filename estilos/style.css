@@ -464,7 +464,7 @@ div#duvidas section h3 {
 
 .linktree-card {
     background-color: var(--cor0);
-    padding: 30px 20px;
+    padding: 30px 20px 5px 20px;
     border-radius: 20px;
     width: 100%;
     max-width: 360px;
@@ -545,6 +545,13 @@ div#duvidas section h3 {
     transform: scale(1.05);
 }
 
+#icons-rodape {
+    color: var(--cor3);
+}
+
+.icons-rodape {
+    width: 40px;
+}
 
 @media (max-width: 750px) {
     .hamburger {
