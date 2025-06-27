@@ -121,7 +121,7 @@ video#fundo-video {
     text-align: center;
     font-family: var(--fonte-padrao);
     line-height: 1.5em;
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
 .conteudo h1 {
@@ -399,7 +399,7 @@ div#img-blob img {
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 5px;
     background-color: black;
 }
 
@@ -407,7 +407,7 @@ div#img-blob img {
     font-size: 20px;
     font-family: var(--fonte-padrao);
     text-align: center;
-    padding: 15px 0px;
+    padding: 15px 0px 0px 0px;
 }
 
 #avaliacoes .descricao {
