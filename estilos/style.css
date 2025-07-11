@@ -608,7 +608,6 @@ div#img-blob img {
         background: var(--cor1);
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
-
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
