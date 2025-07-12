@@ -62,7 +62,8 @@ a {
 .nav-list a {
     font-size: 18px;
     color: var(--cor0);
-    padding-block: 16px;
+    padding-block: 4px;
+    line-height: 1.2;
 }
 
 .hamburger {
@@ -198,9 +199,9 @@ main h1 {
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 120px; 
         align-items: center;
-        gap: 0px;
         pointer-events: none;
     }
 
