@@ -17,3 +17,21 @@ botoes.forEach(botao => {
     });
   });
 });
+
+// Mostrar o botão quando a rolagem passar de 300px
+window.addEventListener('scroll', function() {
+  const btn = document.getElementById('scrollTopBtn');
+  if (window.scrollY > 300) {
+    btn.style.display = 'block';
+  } else {
+    btn.style.display = 'none';
+  }
+});
+
+// Rolar suavemente até o topo ao clicar
+document.getElementById('scrollTopBtn').addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});

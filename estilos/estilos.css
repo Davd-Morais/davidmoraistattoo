@@ -113,6 +113,73 @@ main h1 {
     line-height: 1.6;
 }
 
+.galeria-container {
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.galeria-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.texto-estudio {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.texto-estudio h2 {
+    font-family: var(--fonte-padrao);
+    font-weight: 800;
+    text-align: left;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.texto-estudio p {
+    font-family: var(--fonte-segundaria);
+    color: var(--cor4);
+    line-height: 1.6;
+    text-align: left;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--cor3);
+    color: var(--cor4);
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+    transform: scale(1.1);
+    background-color: var(--cor4);
+    color: var(--cor3);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.5s ease;
+    
+}
 
 @media (max-width: 750px) {
     .hamburger {
