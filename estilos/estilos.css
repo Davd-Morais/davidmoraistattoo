@@ -129,11 +129,6 @@ main h1 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.galeria-container img:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-}
-
 .texto-estudio {
     max-width: 800px;
     margin: 40px auto;
@@ -181,6 +176,49 @@ main h1 {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.5s ease;
     
 }
+
+.footer-container {
+    background-color: var(--cor3);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.footer-links a {
+    color: var(--cor0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    color: var(--cor0);
+    font-weight: bold;
+}
+
+.footer-info {
+    color: var(--cor0);
+    font-family: var(--fonte-segundaria);
+    font-weight: 200;
+    text-align: center;
+}
+
+
 
 @media (max-width: 750px) {
     .hamburger {
