@@ -221,6 +221,13 @@ main h1 {
     margin-bottom: 50px;
  }
 
+ .sobre-video video {
+  width: 100%;
+  margin: 20px 0px 0px 0px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
 .footer-container {
     background-color: var(--cor3);
     padding: 20px;
