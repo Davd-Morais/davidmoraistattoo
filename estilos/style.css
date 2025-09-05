@@ -5,9 +5,9 @@
 
 :root {
     --cor0: #0D0D0D;
-    --cor1: #595622;
+    --cor1: #CFC4B1;
     --cor2: #565902;
-    --cor3: #D2D6D9;
+    --cor3: #686228;
     --cor4: #4D4D59;
 
     --fonte-padrao: "Poiret One", sans-serif;
@@ -50,6 +50,7 @@ a {
 
 .logo {
     width: 130px;
+    margin: 0px 0px 0px 100px;
 }
 
 .nav-list {
@@ -141,6 +142,7 @@ video#fundo-video {
     font-style: normal;
     line-height: 1.5em;
     font-size: 20px;
+    color: var(--cor1);
     width: 300px;
     margin: auto;
 }
@@ -161,7 +163,7 @@ video#fundo-video {
 }
 
 .botao-laranja:hover {
-    background-color: var(--cor2);
+    background-color: var(--cor1);
     box-shadow: 0px 0px 50px #d2d6d986;
     transform: scale(1.15);
 } 
@@ -185,6 +187,7 @@ div#info p {
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
+    color: var(--cor1);
     line-height: 2em;
     margin-bottom: 40px;
 }
@@ -245,7 +248,7 @@ div#img-blob img {
 }
 
 #estilos p {
-    color: var(--cor3);
+    color: var(--cor1);
     font-size: 1em;
     margin: 2px 0px 10px 0px;
     text-align: center;
