@@ -49,8 +49,8 @@ a {
 }
 
 .logo {
-    width: 130px;
-    margin: 0px 0px 0px 100px;
+    width: 150px;
+    margin: 0px 0px 0px 97px;
 }
 
 .nav-list {
@@ -332,6 +332,7 @@ div#img-blob img {
     font-weight: 200;
     font-style: normal;
     text-align: center;
+    color: var(--cor1);
 }
 
 #como-funciona {
@@ -358,6 +359,7 @@ div#img-blob img {
     margin-bottom: 4px;
     font-family: var(--fonte-padrao);
     font-weight: bold;
+    color: var(--cor1);
 }
 
 .texto p {
@@ -365,6 +367,7 @@ div#img-blob img {
     line-height: 1.4em;
     font-weight: 200;
     font-family: var(--fonte-segundaria);
+    color: var(--cor1);
 }
 
 #duvidas-frequentes {
@@ -386,7 +389,7 @@ div#img-blob img {
     margin-bottom: 4px;
     font-family: var(--fonte-padrao);
     font-weight: bold;
-    
+    color: var(--cor1);
 }
 
 .duvida-texto p {
@@ -395,6 +398,7 @@ div#img-blob img {
     font-weight: 200;
     font-style: normal;
     padding: 25px 0px 25px 0px;
+    color: var(--cor1);
 }
 
 #avaliacoes {
@@ -411,6 +415,7 @@ div#img-blob img {
     font-family: var(--fonte-padrao);
     text-align: center;
     padding: 15px 0px 0px 0px;
+    color: var(--cor1);
 }
 
 #avaliacoes .descricao {
@@ -420,6 +425,7 @@ div#img-blob img {
     font-style: normal;
     text-align: center;
     padding: 0px 0px 40px 0px;
+    color: var(--cor1);
 }
 
 .avaliacao {
@@ -439,6 +445,7 @@ div#img-blob img {
 .avaliacao p {
     padding: 0px 20px 20px 20px;
     font-family: var(--fonte-segundaria);
+    color: var(--cor1);
 }
 
 .avaliacao span {
@@ -463,6 +470,7 @@ div#img-blob img {
     align-items: center;
     padding: 40px 20px;
     background-color: black;
+    color: var(--cor1);
 }
 
 .linktree-card {
@@ -487,13 +495,13 @@ div#img-blob img {
     overflow: hidden;
     position: relative;
     border-radius: 20px;
-    border: 2px solid var(--cor2);
+    border: 2px solid var(--cor1);
     margin-bottom: 20px;
 }
 
 .linktree-card h2 {
   font-family: var(--fonte-padrao);
-  color: white;
+  color: var(--cor1);
   margin-bottom: 2px;
   font-size: 25px;
 }
@@ -509,7 +517,7 @@ div#img-blob img {
   position: relative;
   display: block;
   background-color: var(--cor1);
-  color: white;
+  color: var(--cor1);
   padding: 14px 20px;
   border-radius: 50px;
   margin-bottom: 12px;
@@ -525,6 +533,7 @@ div#img-blob img {
   top: 50%;
   transform: translateY(-50%);
   font-size: 22px;
+  color: var(--cor3);
 }
 
 .linktree-card .link-btn {
@@ -533,18 +542,18 @@ div#img-blob img {
     justify-content: center;
     gap: 12px;
     background-color: var(--cor1);
-    color: white;
+    color: var(--cor3);
     padding: 14px;
     border-radius: 50px;
     margin-bottom: 12px;
     font-family: var(--fonte-segundaria);
-    font-weight: 200;
+    font-weight: 600;
     font-size: 16px;
     transition: 0.3s;
 }
 
 .linktree-card .link-btn:hover {
-    background-color: var(--cor2);
+    background-color: var(--cor1);
     transform: scale(1.05);
 }
 
@@ -554,6 +563,7 @@ div#img-blob img {
 
 .icons-rodape {
     width: 40px;
+    
 }
 
 .footer-container {
@@ -572,9 +582,9 @@ div#img-blob img {
 }
 
 .footer-links a {
-    color: white;
+    color: var(--cor3);
     font-family: var(--fonte-segundaria);
-    font-weight: 200;
+    font-weight: 600;
 }
 
 .footer-social {
@@ -587,12 +597,12 @@ div#img-blob img {
 .footer-info {
     color: var(--cor3);
     font-family: var(--fonte-segundaria);
-    font-weight: 200;
+    font-weight: 300;
     text-align: center;
 }
 
 .footer-social a {
-    color: white;
+    color: var(--cor3);
 }
 
 #scrollTopBtn {
