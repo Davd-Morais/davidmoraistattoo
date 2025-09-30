@@ -867,7 +867,7 @@
     .carrossel-wrapper {
         position: relative;
         width: 100%;
-        max-width: 1400px;
+        max-width: 1200px;
         overflow: hidden;
         margin: 0 auto;
     }
@@ -885,6 +885,7 @@
     .carrossel img {
         flex: 0 0 auto;
         width: 400px;
+        max-width: 1200px;
         height: auto;
         border-radius: 10px;
         border: 2px solid rgba(255, 255, 255, 0.2);
@@ -898,7 +899,6 @@
         }
 
     .seta {
-        display: none;
         position: absolute;
         top: 40%;
         transform: translateY(-50%);
