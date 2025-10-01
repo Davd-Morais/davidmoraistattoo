@@ -18,6 +18,34 @@ botoes.forEach(botao => {
   });
 });
 
+
+const carrossel = document.querySelector('.carrossel');
+const imagens = carrossel.querySelectorAll('img');
+const indicadoresContainer = document.querySelector('.indicadores');
+
+// Criar bolinhas
+imagens.forEach((_, index) => {
+  const indicador = document.createElement('span');
+  if (index === 0) indicador.classList.add('ativo');
+  indicador.addEventListener('click', () => {
+    carrossel.scrollTo({
+      left: carrossel.offsetWidth * index,
+      behavior: 'smooth'
+    });
+  });
+  indicadoresContainer.appendChild(indicador);
+});
+
+// Atualizar ativo conforme scroll
+carrossel.addEventListener('scroll', () => {
+  const index = Math.round(carrossel.scrollLeft / carrossel.offsetWidth);
+  const todos = indicadoresContainer.querySelectorAll('span');
+  todos.forEach(b => b.classList.remove('ativo'));
+  if (todos[index]) todos[index].classList.add('ativo');
+});
+
+
+
 // Mostrar o botão quando a rolagem passar de 300px
 window.addEventListener('scroll', function() {
   const btn = document.getElementById('scrollTopBtn');

@@ -867,59 +867,56 @@
     .carrossel-wrapper {
         position: relative;
         width: 100%;
-        max-width: 1200px;
+        max-width: 1230px;
         overflow: hidden;
         margin: 0 auto;
     }
 
     .carrossel {
-        width: 1400px;
         display: flex;
-        overflow-x: auto;
-        scroll-behavior: smooth;
         gap: 10px;
         padding: 10px 0;
+        scroll-behavior: smooth;
         scroll-snap-type: x mandatory;
+        overflow-x: hidden;
     }
 
     .carrossel img {
         flex: 0 0 auto;
-        width: 400px;
-        max-width: 1200px;
-        height: auto;
+        width: 300px;
         border-radius: 10px;
         border: 2px solid rgba(255, 255, 255, 0.2);
         scroll-snap-align: start;
         transition: transform 0.3s ease;
-        margin: auto;
     }
 
     .carrossel img:hover {
         transform: scale(1.05);
-        }
+    }
+
 
     .seta {
+        display: block;
         position: absolute;
-        top: 40%;
+        top: 50%;
         transform: translateY(-50%);
         background: var(--cor1);
         color: var(--cor3);
         border: none;
-        font-size: 20px;
+        font-size: 24px;
         padding: 8px 12px;
         cursor: pointer;
         z-index: 2;
         border-radius: 5px;
     }
-
     .seta.esquerda {
         left: -10px;
-        top: 130px;
+        top: 150px;
     }
 
     .seta.direita {
         right: -10px;
-        top: 130px;
+        top: 150px;
     }
 
     #duvidas {
