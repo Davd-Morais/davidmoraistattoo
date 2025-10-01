@@ -54,16 +54,6 @@ document.querySelectorAll('.carrossel-wrapper').forEach(wrapper => {
 });
 
 
-// Atualizar ativo conforme scroll
-carrossel.addEventListener('scroll', () => {
-  const index = Math.round(carrossel.scrollLeft / carrossel.offsetWidth);
-  const todos = indicadoresContainer.querySelectorAll('span');
-  todos.forEach(b => b.classList.remove('ativo'));
-  if (todos[index]) todos[index].classList.add('ativo');
-});
-
-
-
 // Mostrar o botão quando a rolagem passar de 300px
 window.addEventListener('scroll', function() {
   const btn = document.getElementById('scrollTopBtn');
