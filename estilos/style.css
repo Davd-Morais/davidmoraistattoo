@@ -260,7 +260,8 @@
 
     .carrossel img {
         flex: 0 0 auto;
-        width: 300px;
+        max-width: 100%;
+        width: 250px;
         height: auto;
         border-radius: 10px;
         border: 2px solid rgba(255, 255, 255, 0.2);

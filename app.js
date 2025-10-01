@@ -19,22 +19,40 @@ botoes.forEach(botao => {
 });
 
 
-const carrossel = document.querySelector('.carrossel');
-const imagens = carrossel.querySelectorAll('img');
-const indicadoresContainer = document.querySelector('.indicadores');
+// Para cada carrossel-wrapper, cria bolinhas e controla o scroll
+document.querySelectorAll('.carrossel-wrapper').forEach(wrapper => {
+  const carrossel = wrapper.querySelector('.carrossel');
+  const imagens = carrossel.querySelectorAll('img');
+  const indicadoresContainer = wrapper.querySelector('.indicadores');
 
-// Criar bolinhas
-imagens.forEach((_, index) => {
-  const indicador = document.createElement('span');
-  if (index === 0) indicador.classList.add('ativo');
-  indicador.addEventListener('click', () => {
-    carrossel.scrollTo({
-      left: carrossel.offsetWidth * index,
-      behavior: 'smooth'
+  // Limpa os indicadores antes de recriar
+  indicadoresContainer.innerHTML = "";
+
+  // Criar bolinhas
+  imagens.forEach((_, index) => {
+    const indicador = document.createElement('span');
+    if (index === 0) indicador.classList.add('ativo');
+    indicador.addEventListener('click', () => {
+      carrossel.scrollTo({
+        left: carrossel.offsetWidth * index,
+        behavior: 'smooth'
+      });
     });
+    indicadoresContainer.appendChild(indicador);
   });
-  indicadoresContainer.appendChild(indicador);
+
+  // Atualizar ativo conforme scroll
+  carrossel.addEventListener('scroll', () => {
+    const index = Math.round(carrossel.scrollLeft / carrossel.offsetWidth);
+    const todos = indicadoresContainer.querySelectorAll('span');
+    todos.forEach(b => b.classList.remove('ativo'));
+    if (todos[index]) todos[index].classList.add('ativo');
+  });
+
+  // Garantir que comece na primeira imagem
+  carrossel.scrollLeft = 0;
 });
+
 
 // Atualizar ativo conforme scroll
 carrossel.addEventListener('scroll', () => {
