@@ -310,7 +310,7 @@
         height: 12px;
         background: rgba(255,255,255,0.4);
         border-radius: 50%;
-        display: block;
+        display: none;
         cursor: pointer;
         transition: background 0.3s;
     }
