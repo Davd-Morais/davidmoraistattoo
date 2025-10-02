@@ -178,13 +178,13 @@ main h1 {
 .contato .intro {
   font-family: var(--fonte-segundaria);
   color: var(--cor4);
-  margin-bottom: 30px;
 }
 
 .contato-info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
+  margin: 0px 50px;
 }
 
 .info-item {
@@ -204,7 +204,7 @@ main h1 {
 
 .info-item h3 {
     font-family: var(--fonte-padrao);
-    font-size: 18px;
+    font-size: 30px;
     margin-bottom: 5px;
     color: var(--cor0);
  }
@@ -212,18 +212,26 @@ main h1 {
 .info-item p {
     font-family: var(--fonte-segundaria);
     color: var(--cor4);
-    font-size: 15px;
+    font-size: 20px;
  }
 
 #telefone {
     margin-bottom: 50px;
  }
 
+.contato-h1 {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding-top: 40px;
+    font-size: 40px;
+}
+
  .info p {
-    font-size: 19px;
+    font-size: 25px;
+    font-weight: 600;
     text-align: center;
     margin: 15px auto;
-    padding: 0 10px;
+    padding: 0 5px;
  }
 
  .sobre-video {
