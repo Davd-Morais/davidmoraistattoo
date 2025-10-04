@@ -638,7 +638,7 @@
 /* Estilos para desktops e telas maiores */
 
     @media screen and (min-width: 992px) {
-                    /* Reset básico */
+        
     * {
     margin: 0;
     padding: 0;

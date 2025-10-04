@@ -22,7 +22,7 @@
 
 
 @media (max-width: 750px) {
-    html {
+html {
     scroll-behavior: smooth;
 }
 
