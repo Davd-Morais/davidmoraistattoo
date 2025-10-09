@@ -372,11 +372,43 @@ main h1 {
         padding: 20px;
     }
 
-    .info {
+    .breadcrumb {
+        font-family: var(--fonte-secundaria, Arial, sans-serif);
+        font-size: 0.95rem;
+        color: #555;
+        margin: 0 auto 40px auto;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 15px;
+        width: 100%;
+        max-width: 1200px;
         text-align: center;
-        max-width: 600px;
+    }
+
+    .breadcrumb a {
+        color: #555;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        }
+
+    .breadcrumb a:hover {
+        color: #000;
+    }
+
+    .info {
+        align-items: center;
+        gap: 60px;
+        text-align: center;
+        max-width: 1200px;
+        width: 100%;
         margin: 50px auto;
         padding: 0 20px;
+    }
+
+    .info-h1 { 
+        font-family: var(--fonte-padrao);
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+        margin-top: 50px;
     }
 
     .info h2 {
@@ -387,12 +419,23 @@ main h1 {
         margin-bottom: 16px;
     }
 
-    .info p {
-        font-family: var(--fonte-segundaria);
-        font-size: 16px;
-        color: #555;
-        line-height: 1.6;
+    .sobre-video {
+        width: 100%;
+        max-width: 1200px;
+        border-radius: 12px;
+        margin: auto;
+        margin-top: 200px;
+        margin-bottom: 100px;
     }
+
+    .info p {
+        flex: 1;
+        font-family: var(--fonte-segundaria);
+        color: #555;
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+
 
     .galeria-container {
         padding: 15px;
