@@ -84,6 +84,28 @@ a {
     line-height: 1.2;
 }
 
+.breadcrumb {
+    font-family: var(--fonte-secundaria, Arial, sans-serif);
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0 auto 40px auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.breadcrumb a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: #000;
+}
+
 main h1 {
     font-family: var(--fonte-padrao);
     text-align: center;
@@ -95,6 +117,13 @@ main h1 {
     max-width: 600px;
     margin: 50px auto;
     padding: 0 20px;
+}
+
+.info-h1 { 
+    font-family: var(--fonte-padrao);
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .info h2 {
@@ -178,16 +207,20 @@ main h1 {
     
 }
 
-.contato .intro {
-  font-family: var(--fonte-segundaria);
-  color: var(--cor4);
-}
+    .contato {
+        width: 400px;
+        margin: 100px auto 100px auto;
+        padding: 30px;
+        border-radius: 20px;
+        border: solid 2px var(--cor2);
+        font-family: var(--fonte-segundaria);
+        color: var(--cor4);
+    }
 
 .contato-info {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  margin: 0px 50px;
 }
 
 .info-item {
@@ -218,15 +251,11 @@ main h1 {
     font-size: 20px;
  }
 
-#telefone {
-    margin-bottom: 50px;
- }
-
 .contato-h1 {
     font-family: var(--fonte-padrao);
-    text-align: center;
-    padding-top: 40px;
-    font-size: 40px;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
  .info p {
@@ -500,55 +529,67 @@ main h1 {
         
     }
 
-    .contato .intro {
-    font-family: var(--fonte-segundaria);
-    color: var(--cor4);
-    margin-bottom: 30px;
+    .contato {
+        width: 400px;
+        margin: 100px auto 100px auto;
+        padding: 30px;
+        border-radius: 20px;
+        border: solid 2px var(--cor2);
+        font-family: var(--fonte-segundaria);
+        color: var(--cor4);
+    }
+
+    .contato:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        transition: box-shadow 0.3s ease;
+    }
+
+    .contato-h1 {
+        font-family: var(--fonte-padrao);
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+        margin-top: 50px;
     }
 
     .contato-info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .info-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    text-align: left;
-    margin: 0px 0px 0px 20px;
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        text-align: left;
+        margin: 0px 0px 0px 20px;
     }
 
     .info-item .icon {
-    width: 28px;
-    height: 28px;
-    stroke: var(--cor0);
-    stroke-width: 1.5;
+        width: 28px;
+        height: 28px;
+        stroke: var(--cor0);
+        stroke-width: 1.5;
     }
 
     .info-item h3 {
-    font-family: var(--fonte-padrao);
-    font-size: 18px;
-    margin-bottom: 5px;
-    color: var(--cor0);
+        font-family: var(--fonte-padrao);
+        font-size: 25px;
+        margin-bottom: 5px;
+        color: var(--cor0);
     }
 
     .info-item p {
-    font-family: var(--fonte-segundaria);
-    color: var(--cor4);
-    font-size: 15px;
-    }
-
-    #telefone {
-        margin-bottom: 50px;
+        font-family: var(--fonte-segundaria);
+        color: var(--cor4);
+        font-size: 18px;
     }
 
     .sobre-video video {
-    width: 100%;
-    margin: 20px 0px 0px 0px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
 
     .footer-container {
