@@ -422,7 +422,7 @@
         font-family: var(--fonte-padrao);
         text-align: center;
         padding: 15px 0px 0px 0px;
-        color: var(--cor1);
+        color: var(--cor3);
     }
 
     #avaliacoes .descricao {
