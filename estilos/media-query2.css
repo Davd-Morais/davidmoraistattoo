@@ -592,6 +592,72 @@ main h1 {
         box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
 
+    .estudio-h1 {
+        font-family: var(--fonte-padrao);
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .info {
+        max-width: 800px;
+        margin: 0 auto 60px auto;
+    }
+
+    .info h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .info p {
+        color: #555;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .galeria-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 20px;
+        justify-items: center;
+        margin-bottom: 60px;
+    }
+
+    .galeria-container img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .galeria-container img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .texto-estudio {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 40px;
+        border-top: 1px solid #ddd;
+    }
+
+    .texto-estudio h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .texto-estudio p {
+        font-size: 1rem;
+        text-align: center;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 50px;
+    }
+
     .footer-container {
         background-color: var(--cor1);
         padding: 20px;
