@@ -658,6 +658,100 @@ main h1 {
         margin-bottom: 50px;
     }
 
+    .artes-autorais {
+        
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0px 20px 60px 20px;
+        text-align: center;
+    }
+    
+    .artes-autorais h1 {
+        font-family: var(--fonte-padrao);
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .artes-autorais .descricao {
+        font-family: var(--fonte-segundaria);
+        color: #555;
+        font-size: 1rem;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto 60px auto;
+    }
+
+    .galeria-artes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+
+    .arte-card {
+        background: var(--cor0);
+        border: 1px solid var(--cor1);
+        border-radius: 15px;
+        padding: 15px;
+        transition: transform 0.3s ease;
+    }
+
+    .arte-card:hover {
+        transform: scale(1.03);
+    }
+
+    .arte-card img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .arte-card h3 {
+        color: var(--cor1);
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+
+    .arte-card .preco {
+        color: var(--cor3);
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .precos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .preco-antigo {
+        text-decoration: line-through;
+        color: #888;
+        font-size: 0.9rem;
+    }
+
+    .preco-novo {
+        color: var(--cor1); /* Você pode trocar pela cor do seu tema */
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .btn-reservar {
+        background: var(--cor1);
+        color: black;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: background 0.3s;
+    }
+
+    .btn-reservar:hover {
+    background: var(--cor2);
+    }
+
     .footer-container {
         background-color: var(--cor1);
         padding: 20px;
