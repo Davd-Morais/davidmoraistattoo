@@ -683,7 +683,7 @@ main h1 {
     }
 
     .galeria-artes {
-        display: grid;
+        display: flex;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 30px;
     }
@@ -693,6 +693,9 @@ main h1 {
         border: 1px solid var(--cor1);
         border-radius: 15px;
         padding: 15px;
+        position: relative;
+        width: 100%;
+        max-width: 300px;
         transition: transform 0.3s ease;
     }
 
@@ -732,7 +735,7 @@ main h1 {
     }
 
     .preco-novo {
-        color: var(--cor1); /* Você pode trocar pela cor do seu tema */
+        color: var(--cor1);
         font-weight: bold;
         font-size: 1.2rem;
     }
@@ -749,7 +752,21 @@ main h1 {
     }
 
     .btn-reservar:hover {
-    background: var(--cor2);
+        background: var(--cor2);
+    }
+
+    .selo-desconto {
+        position: absolute;
+        top: 10px;
+        right: -6px;
+        background: #ff1e1e;
+        color: white;
+        padding: 5px 12px;
+        font-size: 13px;
+        font-weight: bold;
+        border-radius: 5px 0 0 5px;
+        transform: rotate(8deg);
+        box-shadow: 0 3px 6px rgba(0,0,0,0.3);
     }
 
     .footer-container {

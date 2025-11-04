@@ -71,3 +71,30 @@ document.getElementById('scrollTopBtn').addEventListener('click', function() {
     behavior: 'smooth'
   });
 });
+
+const track = document.querySelector('.carousel-track');
+const cards = Array.from(document.querySelectorAll('.arte-card'));
+const dotsContainer = document.querySelector('.carousel-dots');
+
+let currentIndex = 0;
+
+// Criar bolinhas
+cards.forEach((_, index) => {
+    const dot = document.createElement('button');
+    if (index === 0) dot.classList.add('active');
+    dotsContainer.appendChild(dot);
+
+    dot.addEventListener('click', () => {
+        currentIndex = index;
+        updateCarousel();
+    });
+});
+
+function updateCarousel() {
+    const cardWidth = cards[0].offsetWidth;
+    track.style.transform = `translateX(${-cardWidth * currentIndex}px)`;
+
+    const dots = document.querySelectorAll('.carousel-dots button');
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[currentIndex].classList.add('active');
+}
