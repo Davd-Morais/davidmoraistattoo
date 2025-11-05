@@ -266,15 +266,12 @@ main h1 {
     .carousel-track {
         display: flex;
         transition: transform 0.4s ease-in-out;
-        gap: 15px;
+        gap: 24px;
     }
 
-    .carousel-dots {
-        display: flex;
-        justify-content: center;
-        gap: 6px;
-        margin-top: 10px;
-    }
+    .carousel-dots { display:flex; justify-content:center; gap:8px; margin-top:12px; }
+    .carousel-dots button { width:10px; height:10px; background:#d0d0d0; border-radius:50%; border:none; }
+    .carousel-dots button.active { background:#111; transform:scale(1.25); }
 
     .carousel-dots button {
         width: 10px;
@@ -317,6 +314,7 @@ main h1 {
         min-width: 90%;
         transition: transform 0.3s ease;
         box-sizing: border-box;
+        flex: 0 0 45%;
     }
 
     .arte-card:hover {
@@ -325,14 +323,17 @@ main h1 {
 
     .arte-card img {
         width: 100%;
+        height: auto;
+        display: block;
         border-radius: 10px;
         margin-bottom: 10px;
     }
 
     .arte-card h3 {
         color: var(--cor1);
+        font-family: var(--fonte-padrao, "Poiret One"), sans-serif;
         font-size: 1.2rem;
-        margin-bottom: 5px;
+        margin: 10px 0 6px;
     }
 
     .arte-card .preco {
@@ -346,6 +347,7 @@ main h1 {
         flex-direction: column;
         align-items: center;
         margin-bottom: 10px;
+        gap: 10px;
     }
 
     .preco-antigo {
@@ -361,14 +363,34 @@ main h1 {
     }
 
     .btn-reservar {
-        background: var(--cor1);
-        color: black;
-        border: none;
+        background: #CFC4B1;
+        color: #111;
+        border: 1px solid rgba(0,0,0,0.06);
         padding: 10px 15px;
         border-radius: 8px;
         cursor: pointer;
         font-weight: 600;
         transition: background 0.3s;
+    }
+
+    .btn-reservar, .btn-info {
+        display:inline-block;
+        margin-top:10px;
+        padding: 8px 12px;
+        border-radius:8px;
+        border: none;
+        cursor:pointer;
+        font-weight:600;
+    }
+
+    .btn-info { 
+        margin-left: 8px; 
+        color: var(--cor0); 
+        background-color: var(--cor1);
+    }
+
+    .btn-info:hover {
+        background-color: var(--cor2);
     }
 
     .btn-reservar:hover {
@@ -388,6 +410,61 @@ main h1 {
         transform: rotate(8deg);
         box-shadow: 0 3px 6px rgba(0,0,0,0.3);
     }
+
+    .dm-modal { 
+        position: fixed; 
+        inset: 0; 
+        display: none; 
+        align-items: center; 
+        justify-content: center; 
+        background: rgba(10,10,10,0.45); 
+        z-index: 1200; 
+        padding: 24px; }
+
+    .dm-modal[aria-hidden="false"] { display:flex; }
+
+    .dm-modal-panel {
+        width: 100%;
+        max-width: 980px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 20px 60px rgba(2,8,23,0.18);
+        padding: 18px;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .dm-modal-close { 
+        position:absolute; 
+        right:14px; 
+        top:12px; 
+        background:transparent; 
+        border:none; 
+        font-size:20px; 
+        cursor:pointer; 
+        color:#333; 
+    }
+
+    .dm-modal-grid { display:flex; gap:18px; align-items:flex-start; }
+    .dm-onarm { flex: 0 0 46%; margin:0; }
+    .dm-onarm img { width:100%; height:auto; border-radius:8px; display:block; }
+    .dm-onarm figcaption { margin-top:8px; font-size:0.85rem; color:#555; }
+
+    .dm-info { flex: 1; text-align:left; color:#111; }
+    .dm-info h2 { margin:0 0 8px; font-size:1.4rem; }
+    .dm-prices { margin: 6px 0 12px; color:#666; }
+    .dm-prices .dm-old { margin-right:10px; text-decoration:line-through; color:#9a9a9a; }
+    .dm-prices .dm-new { color:#c69f6b; font-weight:700; }
+
+    .dm-meta { list-style:none; padding:0; margin:0 0 14px; color:#444; }
+    .dm-meta li { margin-bottom:6px; font-size:0.95rem; }
+
+    .dm-desc { color:#555; margin-bottom:14px; font-size:0.95rem; }
+
+    .dm-actions { display:flex; gap:10px; align-items:center; }
+    .btn { padding:10px 14px; border-radius:8px; text-decoration:none; display:inline-block; }
+    .btn-primary { background:#0b0b0b; color:#fff; }
+    .btn-secondary { background:transparent; border:1px solid #ddd; color:#111; }
 
 .footer-container {
     background-color: var(--cor1);
@@ -449,7 +526,7 @@ main h1 {
         transition: 1s ease-out;
         flex-direction: column;
         justify-content: center;
-        gap: 100px; 
+        gap: 70px; 
         align-items: center;
         pointer-events: none;
     }

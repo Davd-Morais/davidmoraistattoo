@@ -140,3 +140,105 @@ function prevCard() {
         updateCarousel();
     }
 }
+
+(function(){
+  const modal = document.getElementById('dm-modal');
+  const modalTitle = document.getElementById('dm-modal-title');
+  const dmOld = document.querySelector('.dm-old');
+  const dmNew = document.querySelector('.dm-new');
+  const dmPlacement = document.getElementById('dm-placement');
+  const dmSize = document.getElementById('dm-size');
+  const dmOnarmImg = document.getElementById('dm-onarm-img');
+  const dmWA = document.getElementById('dm-wa');
+  const dmMore = document.getElementById('dm-more');
+  const closeBtn = document.querySelector('.dm-modal-close');
+
+  // Abre modal com dados do card
+  function openModalFromCard(card) {
+    const title = card.dataset.title || card.querySelector('h3')?.innerText || 'Arte';
+    const oldPrice = card.dataset.old || card.querySelector('.preco-antigo')?.innerText || '';
+    const newPrice = card.dataset.new || card.querySelector('.preco-novo')?.innerText || '';
+    const placement = card.dataset.placement || 'Não especificado';
+    const size = card.dataset.size || 'Não especificado';
+    const onarm = card.dataset.onarm || card.querySelector('img')?.src || '';
+
+    modalTitle.textContent = title;
+    dmOld.textContent = oldPrice;
+    dmNew.textContent = newPrice;
+    dmPlacement.textContent = placement;
+    dmSize.textContent = size;
+    dmOnarmImg.src = onarm;
+    dmOnarmImg.alt = `${title} — visualização no corpo`;
+
+    // ajusta link do whatsapp para reservar com mensagem rápida
+    const waBase = card.querySelector('.btn-reservar')?.dataset.wa || 'https://wa.me/';
+    const message = encodeURIComponent(`Olá! Tenho interesse na arte "${title}" — valor ${newPrice}. Tenho dúvidas e quero reservar.`);
+    dmWA.href = waBase.includes('?') ? waBase + '&text=' + message : waBase + '?text=' + message;
+
+    // mostra modal
+    modal.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+    // foco para acessibilidade
+    closeBtn.focus();
+  }
+
+  // fecha modal
+  function closeModal() {
+    modal.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  }
+
+  // delegação: abre quando clicar em card (exceto no botão reservar)
+  document.querySelectorAll('.arte-card').forEach(card => {
+    // ao clicar no próprio card
+    card.addEventListener('click', (ev) => {
+      // se clicou no botão reservar, não abrir modal
+      if (ev.target.closest('.btn-reservar')) return;
+      // se clicou no botão info, abre também
+      if (ev.target.closest('.btn-info') || ev.currentTarget === ev.target || !ev.target.closest('.btn-reservar')) {
+        openModalFromCard(card);
+      }
+    });
+
+    // abrir também ao clicar no botão "Ver detalhes"
+    const infoBtn = card.querySelector('.btn-info');
+    if (infoBtn) {
+      infoBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openModalFromCard(card);
+      });
+    }
+  });
+
+  // fechar via X
+  closeBtn.addEventListener('click', closeModal);
+
+  // fechar clicando fora do painel
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  // fechar com ESC
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') {
+      closeModal();
+    }
+  });
+
+  // botão "Ver mais fotos" (apenas exemplo: aqui você pode abrir outra galeria ou rolar para suíte de imagens)
+  dmMore.addEventListener('click', () => {
+    // Exemplo simples: fecha modal e foca primeiro card (você pode implementar galeria expandida)
+    closeModal();
+    const firstCard = document.querySelector('.arte-card');
+    if (firstCard) firstCard.scrollIntoView({behavior:'smooth', block:'center'});
+  });
+
+  // acessibilidade: trap focus minimal (mantém foco dentro do modal enquanto aberto)
+  document.addEventListener('focus', function(e){
+    if (modal.getAttribute('aria-hidden') === 'false' && !modal.contains(e.target)) {
+      e.stopPropagation();
+      closeBtn.focus();
+    }
+  }, true);
+
+})();
