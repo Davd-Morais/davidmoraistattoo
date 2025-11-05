@@ -103,12 +103,12 @@ function updateCarousel() {
 let startX = 0;
 let isDragging = false;
 
-track.addEventListener('touchstart', (e) => {
+document.querySelector('.galeria-artes').addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
     isDragging = true;
 });
 
-track.addEventListener('touchmove', (e) => {
+document.querySelector('.galeria-artes').addEventListener('touchmove', (e) => {
     if (!isDragging) return;
     const currentX = e.touches[0].clientX;
     const diff = startX - currentX;
@@ -123,7 +123,7 @@ track.addEventListener('touchmove', (e) => {
     }
 });
 
-track.addEventListener('touchend', () => {
+document.querySelector('.galeria-artes').addEventListener('touchend', () => {
     isDragging = false;
 });
 
