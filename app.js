@@ -98,3 +98,45 @@ function updateCarousel() {
     dots.forEach(dot => dot.classList.remove('active'));
     dots[currentIndex].classList.add('active');
 }
+
+// --- Swipe para Mobile ---
+let startX = 0;
+let isDragging = false;
+
+track.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+});
+
+track.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    const currentX = e.touches[0].clientX;
+    const diff = startX - currentX;
+
+    // Se arrastar mais de 50px, muda o card
+    if (diff > 50) {
+        nextCard();
+        isDragging = false;
+    } else if (diff < -50) {
+        prevCard();
+        isDragging = false;
+    }
+});
+
+track.addEventListener('touchend', () => {
+    isDragging = false;
+});
+
+function nextCard() {
+    if (currentIndex < cards.length - 1) {
+        currentIndex++;
+        updateCarousel();
+    }
+}
+
+function prevCard() {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+    }
+}

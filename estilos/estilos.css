@@ -267,7 +267,6 @@ main h1 {
         display: flex;
         transition: transform 0.4s ease-in-out;
         gap: 15px;
-        width: 90%;
     }
 
     .carousel-dots {
@@ -304,7 +303,7 @@ main h1 {
     .galeria-artes {
         position: relative;
         overflow: hidden;
-        width: 100%;
+        width: 92%;
         margin: 0 auto;
         padding: 15px;
     }
@@ -450,7 +449,7 @@ main h1 {
         transition: 1s ease-out;
         flex-direction: column;
         justify-content: center;
-        gap: 120px; 
+        gap: 100px; 
         align-items: center;
         pointer-events: none;
     }
