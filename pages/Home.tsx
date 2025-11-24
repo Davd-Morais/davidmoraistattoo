@@ -168,17 +168,24 @@ const Home = () => {
               "https://drive.google.com/thumbnail?id=1OBADvINReZcRhbx2tU_lkMNfbLLhZ95m&sz=w1000",
               "https://drive.google.com/thumbnail?id=1Zj1KxBGP03MMjVhV9Fs4OTNinCvLXKPD&sz=w1000",
               "https://drive.google.com/thumbnail?id=13w-N4jSmI1RcViLkfb2ZVYVIDRKxyC91&sz=w1000",
-              "https://drive.google.com/thumbnail?id=1Xiel80U6p-0MeaZplbTlDeH5N-UulDND&sz=w1000"
+              "https://drive.google.com/thumbnail?id=1Xiel80U6p-0MeaZplbTlDeH5N-UulDND&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1qTqJf_rMwOW05xy08CGEzRRXrcRO_uMH&sz=w1000",
+              "https://drive.google.com/thumbnail?id=18KfEDiC0pPaQ9PhyTaEXpTUmpRRLgN8K&sz=w1000"
             ]}
           />
            <StyleCarousel 
             title="Geek / Anime" 
             description="Estilo caracterizado por elementos da cultura pop e geek."
             images={[
-              "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?q=80&w=2080&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1562962230-16e4623d36e6?q=80&w=1974&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1606411586567-62e9c277df5b?q=80&w=2012&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=2070&auto=format&fit=crop"
+              "https://drive.google.com/thumbnail?id=1n3xEyJWCCMUrK0QDwcqqlrDBtx4roR_z&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1GVits9mZ6cpcN2VSrxCxbuw5c9Of209P&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1_fH_YuQqwdz-vlqcwoG-eBeHLahgCHez&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1ti0pVT_Y9rD8oPs-OgSCZG2JyAbiC54f&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1naxFNRISH2pyJ1RTWuQmhYPkHZbujHqD&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1MfMt_qjqm-pzGmhdzzhA4v67NeijluPA&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1HQ4_qdUk_Nz0r4uEneGHvw--caSHTax5&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1fyKdTAGPXF2DnSCZZc0pYnCFoxXWEL-e&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1uV6jbc8auFMuayGAf5d8zHy4GZgwSmP7&sz=w1000"
             ]}
           />
            <StyleCarousel 
