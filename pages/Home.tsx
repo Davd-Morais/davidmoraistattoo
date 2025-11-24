@@ -102,7 +102,7 @@ const Home = () => {
         {/* Background Image/Overlay (Simulating video) */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1590246814883-051f694029b6?q=80&w=2070&auto=format&fit=crop" 
+            src="https://drive.google.com/thumbnail?id=1jX8pESs4hxFQJmmdcmz-WLrP48On64R_&sz=w1000" 
             alt="Tattoo Artist Background" 
             className="w-full h-full object-cover"
           />
@@ -135,7 +135,7 @@ const Home = () => {
            <div className="w-full md:w-1/2 relative">
               <div className="absolute inset-0 bg-gold-200 rounded-full blur-[100px] opacity-10"></div>
               <img 
-                src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=1974&auto=format&fit=crop" 
+                src="https://drive.google.com/thumbnail?id=1KTxsHyYxl_1B2NVcRgICQPO6HC86IwRh&sz=w1000" 
                 alt="David Morais" 
                 className="relative z-10 w-full max-w-md mx-auto rounded-lg grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl shadow-black"
               />
@@ -162,10 +162,13 @@ const Home = () => {
             title="Blackwork" 
             description="Estilo caracterizado pelo uso de tinta preta sólida, criando uma tattoo impactante."
             images={[
-              "https://images.unsplash.com/photo-1550537687-c913538421d0?q=80&w=2070&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1574163972621-c1240c34e8d3?q=80&w=1974&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1621183353597-285b7367375a?q=80&w=1974&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=1974&auto=format&fit=crop"
+              "https://drive.google.com/thumbnail?id=1wbEFo2o9LWjb-eZqdKoZr4II3yguTzjh&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1z7yl6gSUUbpDQf3G3Mwm6xbqPXAgTQ2K&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1Hw8Q9kaWrgRL01Qy9tbiGD0zpC4_DBKH&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1OBADvINReZcRhbx2tU_lkMNfbLLhZ95m&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1Zj1KxBGP03MMjVhV9Fs4OTNinCvLXKPD&sz=w1000",
+              "https://drive.google.com/thumbnail?id=13w-N4jSmI1RcViLkfb2ZVYVIDRKxyC91&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1Xiel80U6p-0MeaZplbTlDeH5N-UulDND&sz=w1000"
             ]}
           />
            <StyleCarousel 
