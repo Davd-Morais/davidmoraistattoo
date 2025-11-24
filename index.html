@@ -1,309 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tatuador David Morais - Transformando ideias em arte na pele desde 2020. Especializado em Blackwork, Fineline e Tattoos Geek.">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David Morais Tattoo</title>
-    <link rel="shortcut icon" href="imagens/icons/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/media-query.css">
-    <script defer src="app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poiret+One&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Poiret One"', 'cursive'],
+              sans: ['"Karla"', 'sans-serif'],
+            },
+            colors: {
+              gold: {
+                100: '#E6DEC9',
+                200: '#CFC4B1',
+                300: '#B0A288',
+                400: '#8C7F60',
+              },
+              dark: {
+                900: '#0D0D0D',
+                800: '#1A1A1A',
+              },
+              paper: '#f4f1ea'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for a premium feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1a1a1a; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #CFC4B1; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #b0a288; 
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
 </head>
-
-<body>
-    <header class="header">
-        <nav class="nav">
-            <img class="logo" src="imagens/logo/vertical_escura.png" alt="logo David Morais Tattoo">
-            <button class="hamburger" aria-label="Menu de navegação"></button>
-            <ul class="nav-list">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html" target="_self">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="estudio.html">Estúdio</a></li>
-                <li><a href="tattoos.html">Tattoos Exclusivas</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section  class="hero">
-            <video id="fundo-video" autoplay muted loop playsinline>
-                <source src="imagens/videos/background/eu-fundo.mp4" type="video/mp4">
-                Seu navegador não suporta o vídeo
-            </video>
-
-            <div class="degrade"></div>
-
-            <div class="conteudo">
-            <h1>Tatuagem é arte.</h1>
-            <h2> E seu corpo, a tela.</h2>
-            <p>Transforme sua pele em uma obra-prima com <strong>David Morais</strong>. Explore nosso portfólio e agende sua sessão hoje mesmo!</p>
-
-            <a href="#portfolio" target="_self" class="botao-laranja">Ver Portfólio</a>
-        </div>
-
-        </section>
-
-        
-        <section id="sobre">
-            <h2>Quem sou eu?</h2>
-            <div class="sobre-container">
-                <div id="img-blob">
-                    <img src="imagens/logo/eu-blob.png" alt="David Morais">
-                </div>
-                <div id="info">
-                    <p>Desde 2020, venho transformando ideias em arte na pele. Meu trabalho é focado em tatuagens que carregam significado, estilo e personalidade. Seja no traço fino, no Blackwork ou em tattoos inspiradas em animes. Aqui, cada cliente é único e cada tatuagem é feita com atenção aos detalhes, respeito à sua história e técnica apurada. Mais que um estúdio, esse é um espaço onde a arte encontra identidade.</p>
-                </div>
-            </div>
-        </section>
-    
-
-    
-        <section id="estilos">
-            <h2>Estilos que eu tatuo</h2>
-
-            <div class="estilo">
-                <h3>BlackWork</h3>
-
-                <div class="carrossel-wrapper">
-                    <button class="seta esquerda">◀</button>
-
-                    <div class="carrossel">
-                    <img src="imagens/portfolio/blackwork/tattoo-urso.jpg" alt="Tatuagem de um urso">
-                    <img src="imagens/portfolio/blackwork/tattoo-mariposa.jpg" alt="Tatuagem de uma mariposa">
-                    <img src="imagens/portfolio/blackwork/tattoo-vaso.jpg" alt="Tatuagem de vaso de planta">
-                    <img src="imagens/portfolio/blackwork/tattoo-cybertribal.jpg" alt="Tatuagem de cybertribal">
-                    <img src="imagens/portfolio/blackwork/tattoo-dragão.jpg" alt="Tatuagem de um dragão">
-                    <img src="imagens/portfolio/blackwork/tattoo-ghibli.jpg" alt="Tatuagem de um personagem do Studio Ghibli">
-                    <img src="imagens/portfolio/blackwork/tattoo-samurai.jpg" alt="Tatuagem de um samurai">
-                    <img src="imagens/portfolio/blackwork/tattoo-espaço.jpg" alt="Tatuagem do espaço">
-                    <img src="imagens/portfolio/blackwork/tattoo-cachorro.jpg" alt="Tatuagem de um cachorro">
-                    <img src="imagens/portfolio/blackwork/tattoo-hannya.jpg" alt="Tatuagem de uma máscara Hannya">
-                    </div>
-
-                    <button class="seta direita">▶</button>
-                    <div class="indicadores"></div>
-                </div>
-
-                <p>Estilo caracterizado pelo uso de<br> tinta preta sólida, criando uma<br> tattoo impactante.</p>
-                </div>
-
-                <div class="estilo">
-                <h3>Geek</h3>
-
-                <div class="carrossel-wrapper">
-                    <button class="seta esquerda">◀</button>
-
-                    <div class="carrossel">
-                    <img src="imagens/portfolio/geek/tattoo-demon.jpg" alt="Tatuagem de Jujutsu">
-                    <img src="imagens/portfolio/geek/tattoo-kakashi.jpg" alt="Tatuagem de Kakashi">
-                    <img src="imagens/portfolio/geek/tattoo-demon.jpg" alt="Tatuagem de Demon Slayer">
-                    <img src="imagens/portfolio/geek/tattoo-jinx.jpg" alt="Tatuagem de Jinx">
-                    <img src="imagens/portfolio/geek/tattoo-killua-zoldyck.jpg" alt="Tatuagem de Killua Zoldyck">
-                    <img src="imagens/portfolio/geek/tattoo-pokemon.jpg" alt="Tatuagem de Pokémon">
-                    <img src="imagens/portfolio/geek/tattoo-spn.jpg" alt="Tatuagem de Supernatural">
-                    </div>
-
-                    <button class="seta direita">▶</button>
-                    <div class="indicadores"></div>
-                </div>
-
-                <p>Estilo caracterizado por elementos<br> da cultura pop e geek.</p>
-                </div>
-
-                <div class="estilo">
-                <h3>Fineline</h3>
-
-                <div class="carrossel-wrapper">
-                    <button class="seta esquerda">◀</button>
-
-                    <div class="carrossel">
-                    <img src="imagens/portfolio/finelines/tattoo-he-sushine.jpg" alt="Tatuagem de uma escrita He-Sushine">
-                    <img src="imagens/portfolio/finelines/tattoo-asas.jpg" alt="Tatuagem delicada de Asas nas costas">
-                    <img src="imagens/portfolio/finelines/tattoo-maquina.jpg" alt="Tatuagem delicada de Máquina de costura">
-                    <img src="imagens/portfolio/finelines/tattoo-pokemon.jpg" alt="Tatuagem delicada de Pokémon">
-                    <img src="imagens/portfolio/finelines/tattoo-borboleta.jpg" alt="Tatuagem delicada de Borboleta">
-                    <img src="imagens/portfolio/finelines/tattoo-escrita.jpg" alt="Tatuagem delicada de Escrita">
-                    <img src="imagens/portfolio/finelines/tattoo-floral1.jpg" alt="Tatuagem delicada de Floral">
-                    </div>
-
-                    <button class="seta direita">▶</button>
-                    <div class="indicadores"></div>
-                </div>
-
-                <p>Estilo caracterizado por linhas finas<br> e detalhes delicados.</p>
-                </div>
-        </section>
-        
-        <section id="duvidas">
-            <h2>Como Funciona?</h2>
-            <h3>Nós Respondemos</h3>
-
-            <div id="como-funciona">
-
-                <div class="etapa">
-                    <span class="material-symbols-outlined">support_agent</span>
-                    <div class="texto">
-                        <h4>1. Entre em Contato</h4>
-                        <p>Me chama no WhatsApp ou Instagram com a sua ideia.</p>
-                    </div>
-                </div>
-
-                <div class="etapa">
-                    <span class="material-symbols-outlined">chat</span>
-                    <div class="texto">
-                        <h4>2. Conversamos</h4>
-                        <p>Te explico o estilo, faço o orçamento e passo a previsão.</p>
-                    </div>
-                </div>
-
-                <div class="etapa">
-                    <span class="material-symbols-outlined">calendar_month</span>
-                    <div class="texto">
-                        <h4>3. Agendamos</h4>
-                        <p>Você envia o sinal e marcamos o dia.</p>
-                    </div>
-                </div>
-
-                <div class="etapa">
-                    <span class="material-symbols-outlined">home_work</span>
-                    <div class="texto">
-                        <h4>4. Criação da Arte</h4>
-                        <p>Eu desenvolvo sua tattoo com base na ideia que conversamos, ajustando até chegar no resultado perfeito.</p>
-                    </div>
-                </div>
-
-                <div class="etapa">
-                    <span class="material-symbols-outlined">healing</span>
-                    <div class="texto">
-                        <h4>5. Dia da Tattoo</h4>
-                        <p>Você vem ao estúdio e fazemos a sua tattoo.</p>
-                    </div>
-                </div>
-
-                                <div class="etapa">
-                    <span class="material-symbols-outlined">healing</span>
-                    <div class="texto">
-                        <h4>6. Pós-Tattoo</h4>
-                        <p>Explico os cuidados pra sua tattoo cicatrizar perfeita.</p>
-                    </div>
-                </div>
-            </div>
-
-            <h2>Dúvidas Frequentes</h2>
-
-            <div id="duvidas-frequentes">
-                <div class="duvida">
-                    <span class="material-symbols-outlined">live_help</span>
-                    <div class="duvida-texto">
-                        <h4>Quanto tempo leva para uma tatuagem cicatrizar?</h4>
-                        <p>O processo de cicatrização pode levar de 2 a 4 semanas, dependendo do tamanho e da complexidade da tatuagem, assim como dos cuidados pós-procedimento.</p>
-                    </div>
-                </div>
-
-                <div class="duvida">
-                    <span class="material-symbols-outlined">live_help</span>
-                    <div class="duvida-texto">
-                        <h4>Quero fazer minha primeira tatuagem, mas tenho medo. O que me recomendam?</h4>
-                        <p>Recomendamos que escolha uma tatuagem pequena para começar e evite as áreas do corpo mais dolorosas. Assim você vai ver como funciona todo o processo e também entender como seu corpo reage durante a cicatrização. </p>
-                    </div>
-                </div>
-
-                <div class="duvida">
-                    <span class="material-symbols-outlined">live_help</span>
-                    <div class="duvida-texto">
-                        <h4>Que cuidados devo ter depois de fazer uma tatuagem?</h4>
-                        <p>Siga as instruções do seu tatuador, mantenha a área limpa e hidratada, e evite exposição ao sol durante a cicatrização.</p>
-                    </div>
-                </div>
-
-                <div class="duvida">
-                    <span class="material-symbols-outlined">live_help</span>
-                    <div class="duvida-texto">
-                        <h4>Estou grávida, posso fazer uma tatuagem?</h4>
-                        <p>Não recomendamos fazer tatuagens durante a gravidez devido a riscos potenciais. A saúde da mãe e do bebê deve ser a prioridade.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-
-    
-        <section id="avaliacoes">
-            <h2>Veja o que nossos clientes estão dizendo</h2>
-            <p class="descricao">Leia as avaliações de quem já passou pela experiência.</p>
-
-                <div class="avaliacao">
-                    <div class="avaliacao-texto">
-                        <span class="estrela">⭐⭐⭐⭐⭐</span>
-                        <p>"Eu fui muito bem recepcionada por David, o ambiente é extremamente acolhedor e o café é maravilhoso! kkkk Agradeço pelo trabalho, não consigo parar de ficar me admirando no espelho com a minha nova tatuagem."</p>
-                        <span><strong>Maria Fernanda</strong></span>
-                        <p class="cargo">Enfermeira</p>
-                    </div>
-                
-                    <div class="avaliacao-texto">
-                        <span class="estrela">⭐⭐⭐⭐⭐</span>
-                        <p>"Tattoo perfeita, ótimo atendimento e studio muito confortável. Confio no cara de olhos fechados. Recomendo muito."</p>
-                        <span><strong>Theo Brayner</strong></span>
-                        <p class="cargo">Professor</p>
-                    </div>
-                </div>
-
-        </section>
-        
-
-        
-        <section id="linktree">
-            <div class="linktree-card">
-                <img src="imagens/logo/eu.jpg" alt="Logo David Morais Tattoo">
-                <h2>David Morais</h2>
-                <p>TATTOO</p>
-                <video id="studio-video" autoplay muted loop playsinline>
-                    <source src="imagens/videos/background/estudio.mp4" type="video/mp4">
-                    Seu navegador não suporta o vídeo
-                </video>
-                <a href="https://wa.me/message/FUA2THUSJVWFH1" class="link-btn" target="_blank">
-                    <span class="material-symbols-outlined">chat</span> WhatsApp
-                </a>
-                <a href="https://www.instagram.com/davidtattoo_art/" class="link-btn" target="_blank">
-                    <span class="material-symbols-outlined">photo_camera</span> Instagram
-                </a>
-                <a href="https://maps.app.goo.gl/fNfYrHGmqEHwAtHu8" class="link-btn" target="_blank">
-                    <span class="material-symbols-outlined">location_on</span> Como Chegar
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#dbdbdb" viewBox="0 0 256 256" class="icons-rodape"><path d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"></path></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#dbdbdb" viewBox="0 0 256 256" class="icons-rodape"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#dbdbdb" viewBox="0 0 256 256" class="icons-rodape"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"></path></svg>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-container">
-            
-
-            <div class="footer-links">
-                <a href="#sobre">Sobre</a>
-                <a href="#duvidas">Contato</a>
-                <a href="#avaliacoes">Estúdio</a>
-            </div>
-
-            <div class="footer-social">
-                <a href="https://www.instagram.com/davidtattoo_art/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                <a href="https://wa.me/message/FUA2THUSJVWFH1" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-            </div>
-
-            <div class="footer-info">
-                <p>Transformando ideias em arte na pele desde 2020.</p>
-                <p>© 2023 David Morais Tattoo. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <button id="scrollTopBtn" aria-label="Voltar ao topo">
-                ↑
-    </button>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
 </body>
 </html>
