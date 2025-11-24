@@ -10,9 +10,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "autodeploy": "git add . && git commit -m \"update\" || echo sem commit && git push && npm run deploy"
-
-
+    "autodeploy": "node autodeploy.js"
   },
   "dependencies": {
     "lucide-react": "^0.554.0",
