@@ -14,7 +14,7 @@ const About = () => {
         <div className="w-full lg:w-1/2">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">
              <img 
-               src="https://images.unsplash.com/photo-1605652939403-12d8a5c6f642?q=80&w=1964&auto=format&fit=crop" 
+               src="https://drive.google.com/thumbnail?id=1ivGC_gSSkGvYxTAkJ4yb9mPB4Vy3tTQa&sz=w1000" 
                alt="Tattoo Artist working" 
                className="w-full h-auto object-cover"
              />

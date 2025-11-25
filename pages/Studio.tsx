@@ -1,11 +1,11 @@
 import React from 'react';
 
 const studioImages = [
-  "https://images.unsplash.com/photo-1601650346065-276ee6490656?q=80&w=1974&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1598967990422-9226508eb674?q=80&w=1935&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=1974&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1590246814883-051f694029b6?q=80&w=2070&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1621112904891-5af487401484?q=80&w=2069&auto=format&fit=crop"
+  "https://drive.google.com/thumbnail?id=1KGseCFhRLUAi84Fv5LNIzDc6m6XRDJHT&sz=w1000",
+  "https://drive.google.com/thumbnail?id=1TkT_pQ8HLYMhilUWoUTDFlsIdlRzP2q9&sz=w1000",
+  "https://drive.google.com/thumbnail?id=1rW2AhuZPWxgoK5VzwrN_w1UWFGk1_D9P&sz=w1000",
+  "https://drive.google.com/thumbnail?id=1TXO_xZUSs2HA--AIjF3rguRJXaDoqEw_&sz=w1000",
+  "https://drive.google.com/thumbnail?id=1EBCAn_VeF48gCRWR8I4sgp5cZ4DRYifp&sz=w1000"
 ];
 
 const Studio = () => {

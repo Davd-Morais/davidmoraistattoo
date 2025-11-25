@@ -91,7 +91,7 @@ const reviews: Review[] = [
 const faqs: FaqItem[] = [
   { question: "Quanto tempo leva para cicatrizar?", answer: "O processo de cicatrização pode levar de 2 a 4 semanas, dependendo do tamanho e da complexidade da tatuagem, assim como dos cuidados pós-procedimento." },
   { question: "É minha primeira tattoo, dói?", answer: "A dor é relativa, mas para a primeira vez recomendamos áreas menos sensíveis (como braço ou panturrilha) e desenhos menores para você conhecer sua tolerância." },
-  { question: "Quais os cuidados pós-tattoo?", answer: "Manter a área limpa com sabonete neutro, hidratar com a pomada recomendada e evitar sol, mar e piscina durante a cicatrização." },
+  { question: "Quais os cuidados pós-tattoo?", answer: "Manter a área limpa com sabonete neutro, hidratar com a pomada recomendada, evitar alimentos remosos e evitar sol, mar e piscina durante a cicatrização." },
 ];
 
 const Home = () => {
@@ -192,10 +192,13 @@ const Home = () => {
             title="Fineline" 
             description="Estilo caracterizado por linhas finas e detalhes delicados."
             images={[
-              "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=1974&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1621183353526-9e65e5243888?q=80&w=1974&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1598556847285-d72b2518df92?q=80&w=1974&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=2070&auto=format&fit=crop"
+              "https://drive.google.com/thumbnail?id=1mns8ccbt3s0I4aY6Ux9C0GROeOUtC4gr&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1M9QAw_ycQSjvsy9RvyPVB61jID6sjcE7&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1NIyOi2DEves4DYNGNOR6ZldSrN0XGiVs&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1q_oNQv7tVWbD5QRxf3f8qGiFn546IH_f&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1aZnKoTd6tZaB4aDnybgZQ7PQH1HNcBgr&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1Z5Xt1adZgpZTU4Qxp7OSSvalwUlUXEjX&sz=w1000",
+              "https://drive.google.com/thumbnail?id=1yY36d_Zmez2OnD-N0Su06qAG17QViWZ-&sz=w1000"
             ]}
           />
         </div>

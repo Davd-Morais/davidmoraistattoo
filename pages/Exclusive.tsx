@@ -10,8 +10,8 @@ const arts: ExclusiveArt[] = [
     newPrice: 600,
     placement: "Braço (parte interna)",
     size: "28cm",
-    image: "https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?q=80&w=1780&auto=format&fit=crop", // Placeholder
-    onBodyImage: "https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?q=80&w=1780&auto=format&fit=crop",
+    image: "https://drive.google.com/thumbnail?id=1TT0eq0pVCpvhjHIkwTogYaKK4wM2bVXl&sz=w1000", // Placeholder
+    onBodyImage: "https://drive.google.com/thumbnail?id=1_285wfXNwQxuyVtLHFTlV0AiJyKYvFrH&sz=w1000",
     available: true
   },
   {
@@ -21,8 +21,8 @@ const arts: ExclusiveArt[] = [
     newPrice: 550,
     placement: "Costela / Tórax",
     size: "Grande — ~25cm",
-    image: "https://images.unsplash.com/photo-1625426135165-e9cb93699c26?q=80&w=1780&auto=format&fit=crop",
-    onBodyImage: "https://images.unsplash.com/photo-1625426135165-e9cb93699c26?q=80&w=1780&auto=format&fit=crop",
+    image: "https://drive.google.com/thumbnail?id=1fmlAj-0Ss9_-oRAh6clPM4QUQi7LoG3b&sz=w1000",
+    onBodyImage: "https://drive.google.com/thumbnail?id=1fmlAj-0Ss9_-oRAh6clPM4QUQi7LoG3b&sz=w1000",
     available: true
   },
   {
@@ -32,19 +32,19 @@ const arts: ExclusiveArt[] = [
     newPrice: 400,
     placement: "Coxa",
     size: "Médio — ~18cm",
-    image: "https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?q=80&w=1991&auto=format&fit=crop",
-    onBodyImage: "https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?q=80&w=1991&auto=format&fit=crop",
+    image: "https://drive.google.com/thumbnail?id=1FX6IjyUdXz8b4pRxhzxL0Nj5Vj1Bx2Cw&sz=w1000",
+    onBodyImage: "https://drive.google.com/thumbnail?id=1FX6IjyUdXz8b4pRxhzxL0Nj5Vj1Bx2Cw&sz=w1000",
     available: true
   },
   {
     id: "04",
-    title: "Samurai Mask",
+    title: "Zoro 2 (One Piece)",
     oldPrice: 1000,
     newPrice: 500,
     placement: "Antebraço",
     size: "Médio — ~15cm",
-    image: "https://images.unsplash.com/photo-1562962230-16e4623d36e6?q=80&w=1974&auto=format&fit=crop",
-    onBodyImage: "https://images.unsplash.com/photo-1562962230-16e4623d36e6?q=80&w=1974&auto=format&fit=crop",
+    image: "https://drive.google.com/thumbnail?id=1XAkCJZ9hDXxcvWL0DyW-4687SAekA7w8&sz=w1000",
+    onBodyImage: "https://drive.google.com/thumbnail?id=1XAkCJZ9hDXxcvWL0DyW-4687SAekA7w8&sz=w1000",
     available: true
   }
 ];
