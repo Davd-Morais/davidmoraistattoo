@@ -177,7 +177,7 @@ const Exclusive = () => {
                    <Tag className="text-gold-400 mt-1" />
                    <div>
                      <span className="block font-bold text-dark-900 text-sm uppercase">Exclusividade</span>
-                     <span className="text-neutral-600">Arte única (flash), não será repetida.</span>
+                     <span className="text-neutral-600">Arte única, não será repetida.</span>
                    </div>
                 </div>
               </div>
