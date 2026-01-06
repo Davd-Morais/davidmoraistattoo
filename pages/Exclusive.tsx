@@ -11,7 +11,7 @@ const arts: ExclusiveArt[] = [
     placement: "Braço (parte interna)",
     size: "28cm",
     image: "https://drive.google.com/thumbnail?id=1TT0eq0pVCpvhjHIkwTogYaKK4wM2bVXl&sz=w1000", // Placeholder
-    onBodyImage: "https://drive.google.com/thumbnail?id=1_285wfXNwQxuyVtLHFTlV0AiJyKYvFrH&sz=w1000",
+    onBodyImage: "https://drive.google.com/thumbnail?id=11BDyxkLYfep06d86Hn7dOsICng-WwHcE&sz=w1000",
     available: true
   },
   {
@@ -22,7 +22,7 @@ const arts: ExclusiveArt[] = [
     placement: "Costela / Tórax",
     size: "Grande — ~25cm",
     image: "https://drive.google.com/thumbnail?id=1fmlAj-0Ss9_-oRAh6clPM4QUQi7LoG3b&sz=w1000",
-    onBodyImage: "https://drive.google.com/thumbnail?id=1fmlAj-0Ss9_-oRAh6clPM4QUQi7LoG3b&sz=w1000",
+    onBodyImage: "https://drive.google.com/thumbnail?id=11E-03qTStb9vd4MJjqA_Pg7Rjn0WKt7B&sz=w1000",
     available: true
   },
   {
@@ -33,7 +33,7 @@ const arts: ExclusiveArt[] = [
     placement: "Coxa",
     size: "Médio — ~18cm",
     image: "https://drive.google.com/thumbnail?id=1FX6IjyUdXz8b4pRxhzxL0Nj5Vj1Bx2Cw&sz=w1000",
-    onBodyImage: "https://drive.google.com/thumbnail?id=1FX6IjyUdXz8b4pRxhzxL0Nj5Vj1Bx2Cw&sz=w1000",
+    onBodyImage: "https://drive.google.com/thumbnail?id=1yWRQyg0RWgPLb4fqcuqPNvVssgpY1E14&sz=w1000",
     available: true
   },
   {
@@ -44,7 +44,7 @@ const arts: ExclusiveArt[] = [
     placement: "Antebraço",
     size: "Médio — ~15cm",
     image: "https://drive.google.com/thumbnail?id=1XAkCJZ9hDXxcvWL0DyW-4687SAekA7w8&sz=w1000",
-    onBodyImage: "https://drive.google.com/thumbnail?id=1XAkCJZ9hDXxcvWL0DyW-4687SAekA7w8&sz=w1000",
+    onBodyImage: "https://drive.google.com/thumbnail?id=1whEXk6bbWEiI3LgePHuXCtfYKfkhc8FA&sz=w1000",
     available: true
   }
 ];
